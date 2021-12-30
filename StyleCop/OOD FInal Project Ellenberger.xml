@@ -1,0 +1,410 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>OOD FInal Project Ellenberger</name>
+    </assembly>
+    <members>
+        <member name="T:OOD_FInal_Project_Ellenberger.CoffeeFactory">
+            <summary>
+            Coffee Factory.
+            </summary>
+        </member>
+        <member name="M:OOD_FInal_Project_Ellenberger.CoffeeFactory.MakeCoffee(System.String)">
+            <summary>
+            Make Coffee Method.
+            </summary>
+            <param name="coffeeType"> CoffeeType.</param>
+            <returns>Beverage.</returns>
+        </member>
+        <member name="T:OOD_FInal_Project_Ellenberger.CoffeeMenuEnumerator">
+            <summary>
+            Coffee Enum.
+            </summary>
+        </member>
+        <member name="M:OOD_FInal_Project_Ellenberger.CoffeeMenuEnumerator.#ctor(System.Collections.ArrayList)">
+            <summary>
+            Coffee enum constructor.
+            </summary>
+            <param name="items"> items.</param>
+        </member>
+        <member name="P:OOD_FInal_Project_Ellenberger.CoffeeMenuEnumerator.Current">
+            <summary>
+            Gets current.
+            </summary>
+        </member>
+        <member name="M:OOD_FInal_Project_Ellenberger.CoffeeMenuEnumerator.MoveNext">
+            <summary>
+            Move next method.
+            </summary>
+            <returns>bool.</returns>
+        </member>
+        <member name="M:OOD_FInal_Project_Ellenberger.CoffeeMenuEnumerator.Reset">
+            <summary>
+            Reset method.
+            </summary>
+        </member>
+        <member name="T:OOD_FInal_Project_Ellenberger.Composite.CompositeVendingMachine">
+            <summary>
+            Composite vending machine class.
+            </summary>
+        </member>
+        <member name="F:OOD_FInal_Project_Ellenberger.Composite.CompositeVendingMachine.menu">
+            <summary>
+            Menu.
+            </summary>
+        </member>
+        <member name="M:OOD_FInal_Project_Ellenberger.Composite.CompositeVendingMachine.#ctor(OOD_FInal_Project_Ellenberger.Composite.MenuComponent)">
+            <summary>
+            Composite vending machine method.
+            </summary>
+            <param name="menu">menu.</param>
+        </member>
+        <member name="M:OOD_FInal_Project_Ellenberger.Composite.CompositeVendingMachine.PrintMenu">
+            <summary>
+            Print menu method.
+            </summary>
+        </member>
+        <member name="T:OOD_FInal_Project_Ellenberger.Composite.Menu">
+            <summary>
+            Menu class.
+            </summary>
+        </member>
+        <member name="M:OOD_FInal_Project_Ellenberger.Composite.Menu.#ctor(System.String,System.String)">
+            <summary>
+            menu constructor.
+            </summary>
+            <param name="description">description.</param>
+            <param name="name">name.</param>
+        </member>
+        <member name="M:OOD_FInal_Project_Ellenberger.Composite.Menu.Add(OOD_FInal_Project_Ellenberger.Composite.MenuComponent)">
+            <summary>
+            Add method.
+            </summary>
+            <param name="menuComponent">menuComponent.</param>
+        </member>
+        <member name="M:OOD_FInal_Project_Ellenberger.Composite.Menu.Remove(OOD_FInal_Project_Ellenberger.Composite.MenuComponent)">
+            <summary>
+            Remove method.
+            </summary>
+            <param name="menuComponent">menuComponent.</param>
+        </member>
+        <member name="M:OOD_FInal_Project_Ellenberger.Composite.Menu.GetChild(System.Int32)">
+            <summary>
+            get child method.
+            </summary>
+            <param name="i">int i.</param>
+            <returns>MenuComponent.</returns>
+        </member>
+        <member name="M:OOD_FInal_Project_Ellenberger.Composite.Menu.Print">
+            <summary>
+            print method.
+            </summary>
+        </member>
+        <member name="T:OOD_FInal_Project_Ellenberger.Composite.MenuComponent">
+            <summary>
+            MenuComponent class.
+            </summary>
+        </member>
+        <member name="F:OOD_FInal_Project_Ellenberger.Composite.MenuComponent.description">
+            <summary>
+            description field.
+            </summary>
+        </member>
+        <member name="F:OOD_FInal_Project_Ellenberger.Composite.MenuComponent.name">
+            <summary>
+            name field.
+            </summary>
+        </member>
+        <member name="F:OOD_FInal_Project_Ellenberger.Composite.MenuComponent.price">
+            <summary>
+            price field.
+            </summary>
+        </member>
+        <member name="P:OOD_FInal_Project_Ellenberger.Composite.MenuComponent.Description">
+            <summary>
+            Gets the description.
+            </summary>
+        </member>
+        <member name="P:OOD_FInal_Project_Ellenberger.Composite.MenuComponent.Name">
+            <summary>
+            Gets the name.
+            </summary>
+        </member>
+        <member name="P:OOD_FInal_Project_Ellenberger.Composite.MenuComponent.Price">
+            <summary>
+            Gets the price.
+            </summary>
+        </member>
+        <member name="M:OOD_FInal_Project_Ellenberger.Composite.MenuComponent.Add(OOD_FInal_Project_Ellenberger.Composite.MenuComponent)">
+            <summary>
+            Add method.
+            </summary>
+            <param name="menuComponent">menuComponent.</param>
+        </member>
+        <member name="M:OOD_FInal_Project_Ellenberger.Composite.MenuComponent.Remove(OOD_FInal_Project_Ellenberger.Composite.MenuComponent)">
+            <summary>
+            Remove method.
+            </summary>
+            <param name="menuComponent">menucomponent.</param>
+        </member>
+        <member name="M:OOD_FInal_Project_Ellenberger.Composite.MenuComponent.GetChild(System.Int32)">
+            <summary>
+            get child.
+            </summary>
+            <param name="i">int i.</param>
+            <returns>MenuComponent.</returns>
+        </member>
+        <member name="M:OOD_FInal_Project_Ellenberger.Composite.MenuComponent.Print">
+            <summary>
+            print method.
+            </summary>
+        </member>
+        <member name="T:OOD_FInal_Project_Ellenberger.Composite.MenuItem">
+            <summary>
+            MenuItem class.
+            </summary>
+        </member>
+        <member name="M:OOD_FInal_Project_Ellenberger.Composite.MenuItem.#ctor(DecoratorPattern.Beverage)">
+            <summary>
+            MenuItem constructor.
+            </summary>
+            <param name="beverage">beverage.</param>
+        </member>
+        <member name="M:OOD_FInal_Project_Ellenberger.Composite.MenuItem.Print">
+            <summary>
+            print method.
+            </summary>
+        </member>
+        <member name="T:OOD_FInal_Project_Ellenberger.CoffeeConsole">
+            <summary>
+            coffee console.
+            </summary>
+        </member>
+        <member name="M:OOD_FInal_Project_Ellenberger.CoffeeConsole.OrderCoffee">
+            <summary>
+            Order coffee.
+            </summary>
+        </member>
+        <member name="M:OOD_FInal_Project_Ellenberger.CoffeeConsole.Condiment(DecoratorPattern.Beverage)">
+            <summary>
+            condiment method.
+            </summary>
+            <param name="beverage">beverage.</param>
+            <returns>beverage..</returns>
+        </member>
+        <member name="T:OOD_FInal_Project_Ellenberger.Program">
+            <summary>
+            Program class.
+            </summary>
+        </member>
+        <member name="T:DecoratorPattern.Beverage">
+            <summary>
+            Beverage class.
+            </summary>
+        </member>
+        <member name="F:DecoratorPattern.Beverage.cost">
+            <summary>
+            cost.
+            </summary>
+        </member>
+        <member name="F:DecoratorPattern.Beverage.description">
+            <summary>
+            description.
+            </summary>
+        </member>
+        <member name="P:DecoratorPattern.Beverage.Cost">
+            <summary>
+            Gets or sets cost.
+            </summary>
+        </member>
+        <member name="P:DecoratorPattern.Beverage.Description">
+            <summary>
+            Gets or sets description.
+            </summary>
+        </member>
+        <member name="T:DecoratorPattern.Decorators.CondimentDecorator">
+            <summary>
+            CondimentDecorator class.
+            </summary>
+        </member>
+        <member name="F:DecoratorPattern.Decorators.CondimentDecorator.beverage">
+            <summary>
+            beverage field.
+            </summary>
+        </member>
+        <member name="P:DecoratorPattern.Decorators.CondimentDecorator.Cost">
+            <summary>
+            Gets or sets cost.
+            </summary>
+        </member>
+        <member name="P:DecoratorPattern.Decorators.CondimentDecorator.Description">
+            <summary>
+            Gets or sets description.
+            </summary>
+        </member>
+        <member name="T:DecoratorPattern.DarkRoast">
+            <summary>
+            Darkroast class.
+            </summary>
+        </member>
+        <member name="M:DecoratorPattern.DarkRoast.#ctor">
+            <summary>
+            DarkRoast class.
+            </summary>
+        </member>
+        <member name="P:DecoratorPattern.DarkRoast.Cost">
+            <summary>
+            Gets or sets cost.
+            </summary>
+        </member>
+        <member name="P:DecoratorPattern.DarkRoast.Description">
+            <summary>
+            Gets or sets description.
+            </summary>
+        </member>
+        <member name="T:DecoratorPattern.Decaf">
+            <summary>
+            Decaf class.
+            </summary>
+        </member>
+        <member name="M:DecoratorPattern.Decaf.#ctor">
+            <summary>
+            Decaf method.
+            </summary>
+        </member>
+        <member name="P:DecoratorPattern.Decaf.Cost">
+            <summary>
+            Gets or sets cost.
+            </summary>
+        </member>
+        <member name="P:DecoratorPattern.Decaf.Description">
+            <summary>
+            Gets or sets the description.
+            </summary>
+        </member>
+        <member name="T:DecoratorPattern.Espresso">
+            <summary>
+            Espresso class.
+            </summary>
+        </member>
+        <member name="M:DecoratorPattern.Espresso.#ctor">
+            <summary>
+            Espresso method.
+            </summary>
+        </member>
+        <member name="P:DecoratorPattern.Espresso.Cost">
+            <summary>
+            Gets or sets cost.
+            </summary>
+        </member>
+        <member name="P:DecoratorPattern.Espresso.Description">
+            <summary>
+            Gets or sets cost.
+            </summary>
+        </member>
+        <member name="T:DecoratorPattern.HouseBlend">
+            <summary>
+            Housebland class.
+            </summary>
+        </member>
+        <member name="M:DecoratorPattern.HouseBlend.#ctor">
+            <summary>
+            house blend.
+            </summary>
+        </member>
+        <member name="P:DecoratorPattern.HouseBlend.Cost">
+            <summary>
+            Gets or sets the cost.
+            </summary>
+        </member>
+        <member name="P:DecoratorPattern.HouseBlend.Description">
+            <summary>
+            Gets or sets.
+            </summary>
+        </member>
+        <member name="T:DecoratorPattern.Milk">
+            <summary>
+            Milk class.
+            </summary>
+        </member>
+        <member name="M:DecoratorPattern.Milk.#ctor(DecoratorPattern.Beverage)">
+            <summary>
+            Milk constructor.
+            </summary>
+            <param name="beverage">beverage.</param>
+        </member>
+        <member name="P:DecoratorPattern.Milk.Cost">
+            <summary>
+            Gets or sets cost.
+            </summary>
+        </member>
+        <member name="P:DecoratorPattern.Milk.Description">
+            <summary>
+            Gets or sets description.
+            </summary>
+        </member>
+        <member name="T:DecoratorPattern.Mocha">
+            <summary>
+            Mocha class.
+            </summary>
+        </member>
+        <member name="M:DecoratorPattern.Mocha.#ctor(DecoratorPattern.Beverage)">
+            <summary>
+            Mocha constructor.
+            </summary>
+            <param name="beverage">beverage.</param>
+        </member>
+        <member name="P:DecoratorPattern.Mocha.Cost">
+            <summary>
+            Gets or sets cost.
+            </summary>
+        </member>
+        <member name="P:DecoratorPattern.Mocha.Description">
+            <summary>
+            Gets or sets description.
+            </summary>
+        </member>
+        <member name="T:DecoratorPattern.Soy">
+            <summary>
+            Soy class.
+            </summary>
+        </member>
+        <member name="M:DecoratorPattern.Soy.#ctor(DecoratorPattern.Beverage)">
+            <summary>
+            Soy constructor.
+            </summary>
+            <param name="beverage">beverage.</param>
+        </member>
+        <member name="P:DecoratorPattern.Soy.Cost">
+            <summary>
+            Gets or sets cost.
+            </summary>
+        </member>
+        <member name="P:DecoratorPattern.Soy.Description">
+            <summary>
+            Gets or sets Description.
+            </summary>
+        </member>
+        <member name="T:DecoratorPattern.Whip">
+            <summary>
+            whip class.
+            </summary>
+        </member>
+        <member name="M:DecoratorPattern.Whip.#ctor(DecoratorPattern.Beverage)">
+            <summary>
+            whip constructor.
+            </summary>
+            <param name="beverage">beverage.</param>
+        </member>
+        <member name="P:DecoratorPattern.Whip.Cost">
+            <summary>
+            Gets or sets cost.
+            </summary>
+        </member>
+        <member name="P:DecoratorPattern.Whip.Description">
+            <summary>
+            Gets or sets description.
+            </summary>
+        </member>
+    </members>
+</doc>
